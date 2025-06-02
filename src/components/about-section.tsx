@@ -30,7 +30,7 @@ export const AboutSection: React.FC = () => {
             <div className="relative">
               <div className="rounded-lg overflow-hidden shadow-xl">
                 <img 
-                  src="/fanis-photo.jpg" 
+                  src="/images/fanis-photo.jpg" 
                   alt="Фанис Хакимов" 
                   className="w-full h-auto object-cover"
                 />
