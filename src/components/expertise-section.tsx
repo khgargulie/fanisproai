@@ -63,7 +63,7 @@ export const ExpertiseSection: React.FC = () => {
             <div className="flex items-center gap-4 mb-4">
               <div className="w-12 h-12 rounded-full overflow-hidden">
                 <img 
-                  src="images/review-expert1.jpg" 
+                  src="/review-expert1.jpg" 
                   alt="Отзыв ученика" 
                   className="w-full h-full object-cover"
                 />
