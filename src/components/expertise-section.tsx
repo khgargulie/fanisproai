@@ -63,25 +63,28 @@ export const ExpertiseSection: React.FC = () => {
             <div className="flex items-center gap-4 mb-4">
               <div className="w-12 h-12 rounded-full overflow-hidden">
                 <img 
-                  src="/aisha-photo.jpg" 
+                  src="images/review-expert1.jpg" 
                   alt="Отзыв ученика" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
                 <h3 className="font-semibold">Аиша</h3>
-                <p className="text-sm opacity-80">Блогер</p>
+                <p className="text-sm opacity-80">Эксперт-консультант грантовых конкурсов, тренер неформального образования</p>
               </div>
             </div>
-            <div className="aspect-video bg-black/30 rounded-lg flex items-center justify-center mb-4">
-              <div className="text-center">
-                <Icon icon="lucide:video" className="text-4xl mb-2" />
-                <p>Видеоотзыв с Rutube</p>
-                <p className="text-sm opacity-70">(Будет добавлен позже)</p>
-              </div>
+            <div className="aspect-video rounded-lg overflow-hidden mb-4">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://rutube.ru/play/embed/b7ce65a0c696ef54f4c83962a66efd60/"
+                frameBorder="0"
+                allow="clipboard-write; autoplay"
+                allowFullScreen
+              ></iframe>
             </div>
             <p className="italic">
-              "Сама обучаю ИИ. Решила получить более глубокие знания и не ошиблась - очень много конкретных практических примеров как можно четче писать промты, о которых не знала. Теперь получаю нужные ответы от ИИ в разы быстрее и при помощи ИИ экономлю минимум 2 часа каждый день на рутинных задачах"
+              "Работала с ИИ, но захотелось углубить знания — и курс Фаниса оказался именно тем, что нужно. Получила грамотное содержание, корректную подачу материала и практические задания, которые действительно закрепляют уроки. Главный результат: смогла окупить курс, помогая другим специалистам освоить нейросети, и теперь активно применяю их как в жизни, так и в профессиональной деятельности!"
             </p>
           </div>
         </div>
