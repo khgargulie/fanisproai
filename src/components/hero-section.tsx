@@ -65,7 +65,7 @@ export const HeroSection: React.FC = () => {
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 shadow-xl">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-6">
                 <img 
-                  src="https://img.heroui.chat/image/ai?w=600&h=450&u=1" 
+                  src="/images/ai.jpeg" 
                   alt="ИИ интерфейс" 
                   className="w-full h-full object-cover"
                 />
