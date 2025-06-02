@@ -15,7 +15,7 @@ export const HeroSection: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Курс по работе с текстовыми нейросетями
+              Курс по работе с текстовыми нейросетями ChatGPT, DeepSeek, Claude и др
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90">
               Научись применять ИИ в работе и бизнесе — сократи время на рутину в 3 раза за 14 дней
