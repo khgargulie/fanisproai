@@ -127,7 +127,7 @@ export const PrivacyPolicy: React.FC = () => {
             </ul>
             
             <p className="mt-8 text-sm text-text-gray/70">
-              Дата последнего обновления: 01.01.2025
+              Дата последнего обновления: 03.06.2025
             </p>
           </div>
         </div>
