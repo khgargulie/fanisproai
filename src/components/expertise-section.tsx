@@ -47,7 +47,7 @@ export const ExpertiseSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-deep-blue text-white">
+    <section id="expertise" className="py-20 bg-deep-blue text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -64,7 +64,7 @@ export const ExpertiseSection: React.FC = () => {
               <div className="w-12 h-12 rounded-full overflow-hidden">
                 <img 
                   src="/review-expert1.jpg" 
-                  alt="Отзыв ученика" 
+                  alt="Отзыв эксперта" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -73,13 +73,13 @@ export const ExpertiseSection: React.FC = () => {
                 <p className="text-sm opacity-80">Эксперт-консультант грантовых конкурсов, тренер неформального образования</p>
               </div>
             </div>
-            <div className="aspect-video rounded-lg overflow-hidden mb-4">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://rutube.ru/play/embed/b7ce65a0c696ef54f4c83962a66efd60/"
-                frameBorder="0"
-                allow="clipboard-write; autoplay"
+            <div className="aspect-video bg-black/30 rounded-lg overflow-hidden mb-4">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://rutube.ru/play/embed/b7ce65a0c696ef54f4c83962a66efd60/" 
+                frameBorder="0" 
+                allow="clipboard-write; autoplay" 
                 allowFullScreen
               ></iframe>
             </div>

@@ -64,7 +64,7 @@ export const FaqSection: React.FC = () => {
         
         <div className="mt-12 text-center">
           <p className="text-text-gray">
-            Остались вопросы? <a href="#contact" className="text-deep-blue font-medium">Свяжитесь с нами</a>
+            Остались вопросы? <a href="#contact" className="text-deep-blue font-medium">Свяжитесь со мной</a>
           </p>
         </div>
       </div>

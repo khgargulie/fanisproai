@@ -69,15 +69,14 @@ export const BenefitsSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-deep-blue text-white">
+    <section id="benefits" className="py-20 bg-deep-blue text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Результат, который изменит твою работу
           </h2>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            После курса ты получишь готовые техники, промт-шаблоны и систему генерации правильных промтов, которые сэкономят минимум 2 часа ежедневно. 
-            ChatGPT, DeepSeek, Claude, Qwen — не так важно, потому что базовая система написания промтов работает везде
+            После курса ты получишь готовые промт-шаблоны и техники, которые сэкономят минимум 2 часа ежедневно. ChatGPT, DeepSeek, Claude, Qwen — освоишь все популярные нейросети по единой системе, которая работает везде
           </p>
         </div>
 

@@ -32,7 +32,13 @@ export const Header: React.FC = () => {
 
         <nav className="hidden md:flex items-center space-x-6">
           <a href="#problems" className={`${isScrolled ? "text-text-gray" : "text-white"} hover:text-gold transition-colors`}>
-            Проблемы
+            Почему
+          </a>
+          <a href="#audience" className={`${isScrolled ? "text-text-gray" : "text-white"} hover:text-gold transition-colors`}>
+            Для кого
+          </a>
+          <a href="#benefits" className={`${isScrolled ? "text-text-gray" : "text-white"} hover:text-gold transition-colors`}>
+            Результат
           </a>
           <a href="#program" className={`${isScrolled ? "text-text-gray" : "text-white"} hover:text-gold transition-colors`}>
             Программа
@@ -40,8 +46,8 @@ export const Header: React.FC = () => {
           <a href="#about" className={`${isScrolled ? "text-text-gray" : "text-white"} hover:text-gold transition-colors`}>
             Обо мне
           </a>
-          <a href="#pricing" className={`${isScrolled ? "text-text-gray" : "text-white"} hover:text-gold transition-colors`}>
-            Стоимость
+          <a href="#expertise" className={`${isScrolled ? "text-text-gray" : "text-white"} hover:text-gold transition-colors`}>
+            Отзывы
           </a>
           <a href="#faq" className={`${isScrolled ? "text-text-gray" : "text-white"} hover:text-gold transition-colors`}>
             FAQ
@@ -78,7 +84,21 @@ export const Header: React.FC = () => {
               className="text-text-gray hover:text-gold transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Проблемы
+              Почему
+            </a>
+            <a
+              href="#audience"
+              className="text-text-gray hover:text-gold transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Для кого
+            </a>
+            <a
+              href="#benefits"
+              className="text-text-gray hover:text-gold transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Результат
             </a>
             <a
               href="#program"
@@ -95,11 +115,11 @@ export const Header: React.FC = () => {
               Обо мне
             </a>
             <a
-              href="#pricing"
+              href="#expertise"
               className="text-text-gray hover:text-gold transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Стоимость
+              Отзывы
             </a>
             <a
               href="#faq"

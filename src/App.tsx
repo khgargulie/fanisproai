@@ -18,6 +18,7 @@ import { ContactSection } from "./components/contact-section";
 import { Footer } from "./components/footer";
 import { PrivacyPolicy } from "./components/privacy-policy";
 import { TelegramChannel } from "./components/telegram-channel";
+import { ScrollToTop } from "./components/scroll-to-top";
 
 function HomePage() {
   return (
@@ -49,6 +50,7 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

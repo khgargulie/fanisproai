@@ -73,7 +73,7 @@ export const ProgramSection: React.FC = () => {
           </h2>
           <p className="text-lg text-text-gray max-w-2xl mx-auto">
             Структурированный подход к обучению поможет тебе последовательно освоить 
-            все аспекты работы с текстовыми нейросетями.
+            все аспекты работы с текстовыми нейросетями, такими как ChatGPT, Deepseek, Claude, Qwen и другими
           </p>
         </div>
 

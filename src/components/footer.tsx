@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 export const Footer: React.FC = () => {
   return (
@@ -17,9 +18,9 @@ export const Footer: React.FC = () => {
           </div>
           
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-            <a href="/privacy-policy" className="hover:text-gold transition-colors">
+            <Link to="/privacy-policy" className="hover:text-gold transition-colors">
               Политика конфиденциальности
-            </a>
+            </Link>
           </div>
         </div>
         

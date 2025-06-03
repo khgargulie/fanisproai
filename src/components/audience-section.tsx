@@ -26,7 +26,7 @@ export const AudienceSection: React.FC = () => {
       description: "Уже использовал ChatGPT, но результаты разочаровали и не оправдали ожиданий"
     },
     {
-      icon: "lucide:target",
+      icon: "lucide:check-circle",
       title: "Перфекционист",
       description: "Хочешь освоить ИИ профессионально, а не поверхностно, и получить максимум от технологии"
     }
@@ -54,7 +54,7 @@ export const AudienceSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section id="audience" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-deep-blue mb-4">
