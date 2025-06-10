@@ -21,6 +21,9 @@ export const Footer: React.FC = () => {
             <Link to="/privacy-policy" className="hover:text-gold transition-colors">
               Политика конфиденциальности
             </Link>
+            <Link to="/terms" className="hover:text-gold transition-colors">
+              Условия использования
+            </Link>
           </div>
         </div>
         

@@ -46,6 +46,10 @@ export const CtaSection: React.FC = () => {
               Написать в WhatsApp
             </Button>
             
+            <p className="text-center text-base opacity-90 mt-6 mb-4">
+              Получи бесплатную 15-минутную консультацию: покажу, как ИИ может решить именно твои задачи
+            </p>
+            
             <p className="text-center text-sm opacity-80 mt-4">
               Стоимость курса: 7 000 ₽
             </p>

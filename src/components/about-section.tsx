@@ -52,6 +52,13 @@ export const AboutSection: React.FC = () => {
               Меня зовут Фанис, и я не просто изучаю ИИ — я применяю его в реальной жизни и проектах каждый день.
             </p>
             
+            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600 mb-6">
+              <p className="text-lg text-gray-800 font-medium">
+                6 лет назад я тратил 12 часов в день на задачи, которые сейчас ИИ делает за час. 
+                Хочу, чтобы ты не повторил мои ошибки.
+              </p>
+            </div>
+            
             <h3 className="text-deep-blue font-semibold text-xl mb-4">Мой опыт:</h3>
             <ul className="space-y-4 mb-8">
               {experiences.map((exp, index) => (
