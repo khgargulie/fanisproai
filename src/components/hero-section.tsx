@@ -15,7 +15,7 @@ export const HeroSection: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Освободи до 15 часов в неделю с помощью ИИ: курс по использованию ChatGPT, DeepSeek, Claude и др.
+              Освободи до 15 часов в неделю с помощью ИИ: <span className="text-gold">онлайн-курс</span> по использованию ChatGPT, DeepSeek, Claude и др.
             </h1>
             <p className="text-xl md:text-2xl mb-4 opacity-90">
               Научись делегировать рутину искусственному интеллекту за 14 дней.
@@ -75,7 +75,7 @@ export const HeroSection: React.FC = () => {
               </div>
               <div className="flex items-center gap-2 text-white/90 text-sm">
                 <Icon icon="lucide:calendar" />
-                <span>Старт курса: 12 июня</span>
+                <span>Старт курса: 20 июня</span>
               </div>
             </div>
           </motion.div>

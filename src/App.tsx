@@ -16,6 +16,8 @@ import { PricingSection } from "./components/pricing-section";
 import { LimitedOfferSection } from "./components/limited-offer-section";
 import { CtaSection } from "./components/cta-section";
 import { FaqSection } from "./components/faq-section";
+import { CtaBlock1 } from "./components/cta-block1";
+import { CtaBlock2 } from "./components/cta-block2";
 import { ContactSection } from "./components/contact-section";
 import { Footer } from "./components/footer";
 import { PrivacyPolicy } from "./components/privacy-policy";
@@ -37,11 +39,13 @@ function HomePage() {
         <SolutionSection />
         <AudienceSection />
         <BenefitsSection />
+        <CtaBlock1 />
         <FormatSection />
         <ProgramSection />
         <AboutSection />
         <ExpertiseSection />
         <PricingSection />
+        <CtaBlock2 />
         <LimitedOfferSection />
         <CtaSection />
         <FaqSection />

@@ -58,7 +58,7 @@ export const Header: React.FC = () => {
           <Button
             color="secondary"
             className="font-bold"
-            onPress={() => document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })}
+            onPress={() => window.open("https://wa.me/79047133714?text=Здравствуйте! Хочу записаться на курс по ИИ", "_blank")}
           >
             Записаться
           </Button>
@@ -132,7 +132,7 @@ export const Header: React.FC = () => {
               color="secondary"
               className="font-bold w-full"
               onPress={() => {
-                document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" });
+                window.open("https://wa.me/79047133714?text=Здравствуйте! Хочу записаться на курс по ИИ", "_blank");
                 setIsMobileMenuOpen(false);
               }}
             >

@@ -2,7 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 
 export const LimitedOfferSection: React.FC = () => {
-  // Дата окончания акции - 12 июня 2025 года
+  // Дата окончания акции - 20 июня 2025 года
   const endDate = new Date(2025, 5, 12, 23, 59, 59); // Месяцы в JavaScript начинаются с 0
   const [timeLeft, setTimeLeft] = React.useState({
     days: 0,
@@ -13,7 +13,7 @@ export const LimitedOfferSection: React.FC = () => {
 
   React.useEffect(() => {
     const calculateTimeLeft = () => {
-      // Устанавливаем дату окончания акции - 12 июня 2025 года
+      // Устанавливаем дату окончания акции - 20 июня 2025 года
       const endDate = new Date(2025, 5, 12, 23, 59, 59);
       const now = new Date();
       const difference = endDate.getTime() - now.getTime();
@@ -53,7 +53,7 @@ export const LimitedOfferSection: React.FC = () => {
             <Icon icon="lucide:alert-triangle" className="text-red-600 text-2xl" />
             <div>
               <h3 className="font-bold text-deep-blue text-xl">Ограниченное предложение</h3>
-              <p className="text-text-gray">До 12 июня или 10 участников</p>
+              <p className="text-text-gray">До 20 июня или 10 участников</p>
             </div>
           </div>
           
