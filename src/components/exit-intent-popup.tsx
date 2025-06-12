@@ -16,13 +16,24 @@ export const ExitIntentPopup: React.FC = () => {
 
   useEffect(() => {
     const handleMouseLeave = (e: MouseEvent) => {
+      // Проверяем, что курсор покидает верхнюю часть окна
       if (e.clientY <= 0 && !hasShown) {
         setIsOpen(true);
         setHasShown(true);
       }
     };
 
-    // Показать попап через 30 секунд, если пользователь не покинул страницу
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (!hasShown) {
+        setIsOpen(true);
+        setHasShown(true);
+        // Предотвращаем закрытие страницы на короткое время
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    };
+
+    // Показать попап через 30 секунд
     const timer = setTimeout(() => {
       if (!hasShown) {
         setIsOpen(true);
@@ -31,9 +42,11 @@ export const ExitIntentPopup: React.FC = () => {
     }, 30000);
 
     document.addEventListener("mouseleave", handleMouseLeave);
+    window.addEventListener("beforeunload", handleBeforeUnload);
     
     return () => {
       document.removeEventListener("mouseleave", handleMouseLeave);
+      window.removeEventListener("beforeunload", handleBeforeUnload);
       clearTimeout(timer);
     };
   }, [hasShown]);
@@ -41,6 +54,11 @@ export const ExitIntentPopup: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    // Отправляем событие в Яндекс Метрику
+    if (typeof window !== 'undefined' && (window as any).ym) {
+      (window as any).ym(98765432, 'reachGoal', 'popup_free_click');
+    }
 
     try {
       await emailjs.send(
@@ -73,12 +91,14 @@ export const ExitIntentPopup: React.FC = () => {
     <Modal 
       isOpen={isOpen} 
       onClose={() => setIsOpen(false)}
-      size="2xl"
+      size="xl"
+      scrollBehavior="inside"
       classNames={{
         backdrop: "bg-black/50 backdrop-blur-sm",
-        base: "border-none",
-        header: "border-b-[1px] border-gray-200",
-        body: "py-6",
+        base: "border-none mx-4 my-4 max-h-[90vh]",
+        header: "border-b-[1px] border-gray-200 px-4 py-3",
+        body: "px-4 py-4 max-h-[70vh] overflow-y-auto",
+        closeButton: "top-3 right-3 z-10"
       }}
     >
       <ModalContent>
@@ -97,14 +117,14 @@ export const ExitIntentPopup: React.FC = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3 }}
             >
-              <Icon icon="lucide:check-circle" className="text-green-500 text-6xl mx-auto mb-4" />
+              <Icon icon="lucide:check-circle" className="text-deep-blue text-6xl mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Спасибо!</h3>
               <p className="text-gray-600">
                 Промты отправлены на указанную почту. Проверьте входящие сообщения.
               </p>
             </motion.div>
           ) : (
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
                   Что получишь:
@@ -114,7 +134,7 @@ export const ExitIntentPopup: React.FC = () => {
                     <div key={index} className="flex items-start gap-2">
                       <Icon 
                         icon="lucide:check" 
-                        className="text-green-500 text-lg mt-0.5 flex-shrink-0" 
+                        className="text-deep-blue text-lg mt-0.5 flex-shrink-0" 
                       />
                       <span className="text-gray-700 text-sm">{bonus}</span>
                     </div>
@@ -122,8 +142,8 @@ export const ExitIntentPopup: React.FC = () => {
                 </div>
                 <div className="mt-6 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
                   <p className="text-sm text-yellow-800 font-medium">
-                    ⚡ Эти промты уже помогли сотням людей автоматизировать рутинные задачи 
-                    и освободить время для важного!
+                    ⚡ Получи готовые решения, которые сэкономят тебе 10+ часов работы 
+                    уже в первую неделю использования!
                   </p>
                 </div>
               </div>

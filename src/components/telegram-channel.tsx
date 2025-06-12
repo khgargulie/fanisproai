@@ -49,6 +49,11 @@ export const TelegramChannel: React.FC = () => {
                 href="https://t.me/fanisproai"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).ym) {
+                    (window as any).ym(98765432, 'reachGoal', 'telegram_click');
+                  }
+                }}
               >
                 Получить доступ к инсайтам
               </Button>

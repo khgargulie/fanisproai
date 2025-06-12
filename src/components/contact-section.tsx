@@ -71,6 +71,11 @@ export const ContactSection: React.FC = () => {
                     className="text-gold hover:underline"
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={() => {
+                      if (contact.title === 'Email' && typeof window !== 'undefined' && (window as any).ym) {
+                        (window as any).ym(98765432, 'reachGoal', 'email_click');
+                      }
+                    }}
                   >
                     {contact.value}
                   </a>

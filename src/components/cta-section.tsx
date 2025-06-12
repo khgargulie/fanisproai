@@ -30,7 +30,7 @@ export const CtaSection: React.FC = () => {
             </div>
             <h3 className="text-2xl font-bold mb-4">Заинтересовал курс?</h3>
             <p className="mb-8 text-lg">
-              Напишите мне в WhatsApp, чтобы получить подробную информацию и записаться на курс
+              Получи бесплатную 15-минутную консультацию: покажу, как ИИ может решить именно твои задачи
             </p>
             
             <Button 
@@ -42,17 +42,14 @@ export const CtaSection: React.FC = () => {
               href="https://api.whatsapp.com/send/?phone=79047133714&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D0%A4%D0%B0%D0%BD%D0%B8%D1%81.%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83%20%D0%B2%D0%B0%D1%88%D0%B8%D1%85%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%B2%20%D0%BF%D0%BE%20%D0%98%D0%98.%20%D0%A3%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81....&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).ym) {
+                  (window as any).ym(98765432, 'reachGoal', 'whatsapp_click');
+                }
+              }}
             >
               Написать в WhatsApp
             </Button>
-            
-            <p className="text-center text-base opacity-90 mt-6 mb-4">
-              Получи бесплатную 15-минутную консультацию: покажу, как ИИ может решить именно твои задачи
-            </p>
-            
-            <p className="text-center text-sm opacity-80 mt-4">
-              Стоимость курса: 7 000 ₽
-            </p>
           </div>
         </motion.div>
       </div>

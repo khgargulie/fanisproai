@@ -15,7 +15,7 @@ export const HeroSection: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Курс по работе с ChatGPT, DeepSeek, Claude и др.: Освободи до 15 часов в неделю с помощью ИИ
+              Освободи до 15 часов в неделю с помощью ИИ: курс по использованию ChatGPT, DeepSeek, Claude и др.
             </h1>
             <p className="text-xl md:text-2xl mb-4 opacity-90">
               Научись делегировать рутину искусственному интеллекту за 14 дней.

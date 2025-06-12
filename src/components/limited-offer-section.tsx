@@ -59,7 +59,7 @@ export const LimitedOfferSection: React.FC = () => {
           
           <div>
             <p className="text-text-gray mb-2 text-center md:text-right">
-              Ограничиваю количество участников, чтобы обеспечить качественную поддержку каждому
+              Чтобы сохранить высокое качество обучения и не потерять фокус на каждом участнике.
             </p>
             
             <div className="flex justify-center md:justify-end gap-3">

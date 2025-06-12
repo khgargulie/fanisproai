@@ -16,6 +16,11 @@ export const FreeLessonSection: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Отправляем событие в Яндекс Метрику
+    if (typeof window !== 'undefined' && (window as any).ym) {
+      (window as any).ym(98765432, 'reachGoal', 'free_lesson_click');
+    }
+
     try {
       await emailjs.send(
         "service_bdp557t",
@@ -87,7 +92,7 @@ export const FreeLessonSection: React.FC = () => {
                 >
                   <Icon 
                     icon="lucide:check-circle" 
-                    className="text-green-500 text-xl mt-0.5 flex-shrink-0" 
+                    className="text-deep-blue text-xl mt-0.5 flex-shrink-0" 
                   />
                   <p className="text-gray-700">{benefit}</p>
                 </motion.div>
@@ -104,7 +109,7 @@ export const FreeLessonSection: React.FC = () => {
           >
             {isSubmitted ? (
               <div className="text-center">
-                <Icon icon="lucide:check-circle" className="text-green-500 text-6xl mx-auto mb-4" />
+                <Icon icon="lucide:check-circle" className="text-deep-blue text-6xl mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Заявка отправлена!</h3>
                 <p className="text-gray-600">
                   Ссылка на бесплатный урок придет на указанный номер в течение 5 минут.
