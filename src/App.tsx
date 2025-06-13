@@ -45,8 +45,8 @@ function HomePage() {
         <AboutSection />
         <ExpertiseSection />
         <PricingSection />
-        <CtaBlock2 />
-        {/* <LimitedOfferSection /> */}
+        {/*<CtaBlock2 /> */}
+        <LimitedOfferSection /> 
         <CtaSection />
         <FaqSection />
         <ContactSection />

@@ -57,8 +57,8 @@ export const Header: React.FC = () => {
         <div className="hidden md:block">
           <Button
             color="secondary"
-            className="font-bold"
-            onPress={() => window.open("https://wa.me/79047133714?text=Здравствуйте! Хочу записаться на курс по ИИ", "_blank")}
+            className="font-bold"           
+            onPress={() => document.getElementById("change-your-live-cta")?.scrollIntoView({ behavior: "smooth" })}
           >
             Записаться
           </Button>
