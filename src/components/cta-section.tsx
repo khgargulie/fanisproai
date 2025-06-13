@@ -57,7 +57,7 @@ export const CtaSection: React.FC = () => {
                 }
               }}
             >
-              Записаться на бесплатную консультацию
+              Бесплатная консультация
             </Button>
           </div>
         </motion.div>

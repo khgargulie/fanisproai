@@ -42,7 +42,7 @@ export const ChangeYourLiveCta: React.FC = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-r from-deep-blue to-blue-600">
+    <section id="change-your-live-cta" className="py-16 bg-gradient-to-r from-deep-blue to-blue-600">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ export const ChangeYourLiveCta: React.FC = () => {
               </div>
             ) : (
               <>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                <h3 className="text-2xl font-bold text-deep-blue mb-6 text-center">
                   Записаться на курс
                 </h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -92,7 +92,7 @@ export const ChangeYourLiveCta: React.FC = () => {
                   />                  
                   <Button
                     type="submit"
-                    className="w-full font-bold bg-gold text-gray-600 hover:bg-gold/90"
+                    className="w-full font-bold bg-gold text-base hover:bg-gold/90"
                     size="lg"
                     isLoading={isSubmitting}
                     disabled={!formData.name || !formData.phone}

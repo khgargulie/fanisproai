@@ -91,7 +91,7 @@ export const PricingSection: React.FC = () => {
                   className="font-bold text-base px-8"
                   onPress={() => document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })}
                 >
-                  ЗАПИСАТЬСЯ НА КУРС ЗА 7 000 ₽
+                  ЗАПИСАТЬСЯ НА КУРС
                 </Button>
               </div>
             </CardBody>
