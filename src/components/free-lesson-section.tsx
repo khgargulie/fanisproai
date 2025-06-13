@@ -18,13 +18,13 @@ export const FreeLessonSection: React.FC = () => {
 
     // Отправляем событие в Яндекс Метрику
     if (typeof window !== 'undefined' && (window as any).ym) {
-      (window as any).ym(98765432, 'reachGoal', 'free_lesson_click');
+      (window as any).ym(102354151, 'reachGoal', 'free_lesson_click');
     }
 
     try {
       await emailjs.send(
         "service_bdp557t",
-        "template_0kf4fbo",
+        "template_s2kbrd8",
         {
           from_name: formData.name,
           phone: formData.phone,
@@ -61,7 +61,8 @@ export const FreeLessonSection: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-deep-blue mb-6">
-            Твой первый шаг к свободе с ИИ: Смотри вводный урок бесплатно!
+            Твой первый шаг к свободе с ИИ:
+            смотри вводный урок бесплатно!
           </h2>
           <p className="text-lg text-gray-700 max-w-4xl mx-auto">
             Мы знаем, как сложно бывает разобраться в мире искусственного интеллекта. 
@@ -77,7 +78,7 @@ export const FreeLessonSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            <h3 className="text-2xl font-bold text-deep-blue mb-6">
               Что получишь в уроке:
             </h3>
             <div className="space-y-4">
@@ -112,12 +113,12 @@ export const FreeLessonSection: React.FC = () => {
                 <Icon icon="lucide:check-circle" className="text-deep-blue text-6xl mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Заявка отправлена!</h3>
                 <p className="text-gray-600">
-                  Ссылка на бесплатный урок придет на указанный номер в течение 5 минут.
+                  Спасибо за заявку! В ближайшее время мы свяжемся с вами по WhatsApp или Telegram.
                 </p>
               </div>
             ) : (
               <>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+                <h3 className="text-2xl font-bold text-deep-blue mb-6 text-center">
                   Получить бесплатный урок
                 </h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -149,7 +150,7 @@ export const FreeLessonSection: React.FC = () => {
                   </Button>
                 </form>
                 <p className="text-sm text-gray-500 text-center mt-4">
-                  Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                  Нажимая кнопку, вы соглашаетесь с <a href="/privacy-policy" className="text-deep-blue hover:underline">политикой конфиденциальности</a>
                 </p>
               </>
             )}

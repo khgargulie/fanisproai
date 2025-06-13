@@ -73,7 +73,7 @@ export const ContactSection: React.FC = () => {
                     rel="noopener noreferrer"
                     onClick={() => {
                       if (contact.title === 'Email' && typeof window !== 'undefined' && (window as any).ym) {
-                        (window as any).ym(98765432, 'reachGoal', 'email_click');
+                        (window as any).ym(102354151, 'reachGoal', 'email_click');
                       }
                     }}
                   >
@@ -97,7 +97,7 @@ export const ContactSection: React.FC = () => {
             color="secondary"
             size="lg"
             className="font-bold text-base"
-            onPress={() => document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })}
+            onPress={() => document.getElementById("change-your-live-cta")?.scrollIntoView({ behavior: "smooth" })}
           >
             НАЧАТЬ ОБУЧЕНИЕ
           </Button>

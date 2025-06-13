@@ -18,7 +18,7 @@ export const QuoteSection: React.FC = () => {
             className="text-white/30 text-6xl mx-auto mb-6" 
           />
           <blockquote className="text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto leading-relaxed">
-            ИИ — не замена человеку, а инструмент для освобождения от рутины ради важного: семьи, творчества, служения
+            Наш курс — это путь к интеллектуальной свободе, свободе времени и финансовой свободе через осознанное использование искусственного интеллекта.
           </blockquote>
           <div className="mt-8 flex justify-center">
             <div className="w-16 h-1 bg-white/30 rounded"></div>

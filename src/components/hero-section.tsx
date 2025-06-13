@@ -29,9 +29,9 @@ export const HeroSection: React.FC = () => {
                 color="secondary"
                 size="lg"
                 className="font-bold text-base"
-                onPress={() => document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })}
+                onPress={() => document.getElementById("change-your-live-cta")?.scrollIntoView({ behavior: "smooth" })}
               >
-                ЗАПИСАТЬСЯ СЕЙЧАС ЗА 7 000 ₽
+                Записаться на курс
               </Button>
               
               <Button 

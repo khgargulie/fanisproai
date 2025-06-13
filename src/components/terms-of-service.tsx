@@ -108,17 +108,6 @@ export const TermsOfService: React.FC = () => {
             <h2>11. Контактная информация</h2>
             <p>
               <strong>Самозанятый:</strong> Хакимов Фанис Альбертович<br />
-              <strong>Телефон:</strong> <a 
-                href="tel:+79047133714" 
-                className="text-blue-600 hover:text-blue-700"
-                onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).ym) {
-                    (window as any).ym(98765432, 'reachGoal', 'phone_click');
-                  }
-                }}
-              >
-                +7 (904) 713-37-14
-              </a><br />
               <strong>Email:</strong> khakimow.fanis@yandex.ru
             </p>
           </div>

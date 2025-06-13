@@ -18,7 +18,7 @@ export const BenefitsSection: React.FC = () => {
       icon: "lucide:award",
       benefits: [
         <span key="1">
-          <span className="text-gold font-bold">25+</span> промтов для жизни и бизнеса
+          <span className="text-gold font-bold">50+</span> промтов для жизни и бизнеса
         </span>,
         "Гайд по внедрению ИИ в работу эксперта",
         "Обновления и новости в ТГ канале"
@@ -76,7 +76,7 @@ export const BenefitsSection: React.FC = () => {
             Результат, который изменит твою работу
           </h2>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            После курса ты получишь готовые промт-шаблоны и техники, которые сэкономят минимум 2 часа ежедневно. ChatGPT, DeepSeek, Claude, Qwen — освоишь все популярные нейросети по единой системе, которая работает везде
+            После курса ты получишь готовые промт-шаблоны и техники, которые сэкономят минимум 2 часа ежедневно. ChatGPT, DeepSeek, Claude, Qwen — освоишь систему работы с текстовыми нейросетями, которая работает везде!
           </p>
         </div>
 

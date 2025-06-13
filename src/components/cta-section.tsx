@@ -8,15 +8,6 @@ export const CtaSection: React.FC = () => {
   return (
     <section id="cta" className="py-20 hero-gradient text-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Начни свой путь к мастерству ИИ сегодня
-          </h2>
-          <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            Технологии будущего уже здесь. Научись использовать их на полную мощность.
-          </p>
-        </div>
-
         <motion.div 
           className="max-w-lg mx-auto bg-white/10 backdrop-blur-sm p-8 rounded-lg"
           initial={{ opacity: 0, y: 20 }}
@@ -25,14 +16,32 @@ export const CtaSection: React.FC = () => {
           viewport={{ once: true, margin: "-50px" }}
         >
           <div className="text-center py-8">
-            <div className="bg-green-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Icon icon="lucide:message-circle" className="text-green-500 text-3xl" />
-            </div>
-            <h3 className="text-2xl font-bold mb-4">Заинтересовал курс?</h3>
-            <p className="mb-8 text-lg">
-              Получи бесплатную 15-минутную консультацию: покажу, как ИИ может решить именно твои задачи
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              Не уверен, что ИИ для тебя?
+            </h3>
+            <p className="text-xl opacity-90 mb-8">
+              Давай разберёмся за 15 минут — без обязательств
             </p>
-            
+            <div className="text-left mb-8">
+              <h4 className="text-xl font-semibold mb-4">Что получишь:</h4>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <Icon icon="lucide:check-circle" className="text-gold text-xl mt-0.5 flex-shrink-0" />
+                  <span>Честную оценку: нужен ли тебе ИИ вообще</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Icon icon="lucide:check-circle" className="text-gold text-xl mt-0.5 flex-shrink-0" />
+                  <span>Конкретные примеры для твоей сферы</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Icon icon="lucide:check-circle" className="text-gold text-xl mt-0.5 flex-shrink-0" />
+                  <span>План действий — даже если ничего не купишь</span>
+                </li>
+              </ul>
+            </div>
+            <p className="text-lg font-semibold mb-8">
+              Никаких продаж. Только польза.
+            </p>
             <Button 
               color="secondary"
               size="lg"
@@ -44,11 +53,11 @@ export const CtaSection: React.FC = () => {
               rel="noopener noreferrer"
               onClick={() => {
                 if (typeof window !== 'undefined' && (window as any).ym) {
-                  (window as any).ym(98765432, 'reachGoal', 'whatsapp_click');
+                  (window as any).ym(102354151, 'reachGoal', 'consultation_click');
                 }
               }}
             >
-              Написать в WhatsApp
+              Записаться на консультацию
             </Button>
           </div>
         </motion.div>
@@ -56,3 +65,4 @@ export const CtaSection: React.FC = () => {
     </section>
   );
 };
+
