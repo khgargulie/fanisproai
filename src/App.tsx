@@ -34,7 +34,7 @@ function HomePage() {
         <HeroSection />
         <FreeLessonSection />
         <QuoteSection />
-         <ExpertiseSection />
+        <ExpertiseSection />
         <ProblemSection />
         <TelegramChannel />
         <SolutionSection />

@@ -62,15 +62,15 @@ export const ExitIntentPopup: React.FC = () => {
 
     try {
       await emailjs.send(
-        "service_bdp557t",
-        "template_s2kbrd8",
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          to_name: "Фанис",
-        },
-        "8MWpFjP_52hJe3-O7"
-      );
+      "service_bdp557t",
+      "template_s2kbrd8",
+      {
+        from_name: formData.name,
+        email: formData.email,        // ← Изменить на email
+        to_name: "Фанис",
+      },
+      "8MWpFjP_52hJe3-O7"
+  );
       setIsSubmitted(true);
       setFormData({ name: "", email: "" });
     } catch (error) {

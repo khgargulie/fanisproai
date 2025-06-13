@@ -24,7 +24,7 @@ export const FreeLessonSection: React.FC = () => {
     try {
       await emailjs.send(
         "service_bdp557t",
-        "template_s2kbrd8",
+        "template_0kf4fbo",
         {
           from_name: formData.name,
           phone: formData.phone,
