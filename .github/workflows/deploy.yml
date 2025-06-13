@@ -1,0 +1,34 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main  # или 'master' — как у тебя
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Copy files to server via SSH
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: 147.45.214.176
+          username: root
+          key: ${{ secrets.DEPLOY_KEY }}   # 🔹 здесь используем твой ключ
+          source: "dist/*"
+          target: "/var/www/fanisproai"
