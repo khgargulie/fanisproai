@@ -89,12 +89,11 @@ export const ChangeYourLiveCta: React.FC = () => {
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     required
                     size="lg"
-                  />
+                  />                  
                   <Button
                     type="submit"
-                    color="default"
+                    className="w-full font-bold bg-gold text-gray-600 hover:bg-gold/90"
                     size="lg"
-                    className="w-full font-bold"
                     isLoading={isSubmitting}
                     disabled={!formData.name || !formData.phone}
                   >
