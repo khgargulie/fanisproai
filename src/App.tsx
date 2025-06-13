@@ -34,6 +34,7 @@ function HomePage() {
         <HeroSection />
         <FreeLessonSection />
         <QuoteSection />
+         <ExpertiseSection />
         <ProblemSection />
         <TelegramChannel />
         <SolutionSection />
@@ -42,8 +43,7 @@ function HomePage() {
         <ChangeYourLiveCta />
         <FormatSection />
         <ProgramSection />
-        <AboutSection />
-        <ExpertiseSection />
+        <AboutSection />       
         <PricingSection />
         {/*<CtaBlock2 /> */}
         <LimitedOfferSection /> 
