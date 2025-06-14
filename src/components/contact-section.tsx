@@ -62,6 +62,11 @@ export const ContactSection: React.FC = () => {
                     className="text-gold hover:underline"
                     target="_blank" 
                     rel="noopener noreferrer"
+                    onClick={() => {
+                      if (contact.title === 'Telegram' && typeof window !== 'undefined' && (window as any).ym) {
+                        (window as any).ym(102643177, 'reachGoal', 'my_telegram_click');
+                      }
+                    }}
                   >
                     {contact.value}
                   </a>
@@ -73,7 +78,7 @@ export const ContactSection: React.FC = () => {
                     rel="noopener noreferrer"
                     onClick={() => {
                       if (contact.title === 'Email' && typeof window !== 'undefined' && (window as any).ym) {
-                        (window as any).ym(102354151, 'reachGoal', 'email_click');
+                        (window as any).ym(102643177, 'reachGoal', 'email_click');
                       }
                     }}
                   >
@@ -106,3 +111,4 @@ export const ContactSection: React.FC = () => {
     </section>
   );
 };
+

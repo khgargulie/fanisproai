@@ -12,7 +12,7 @@ export const YandexMetrika: React.FC = () => {
       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-      ym(102354151, "init", {
+      ym(102643177, "init", {
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true,
@@ -24,7 +24,7 @@ export const YandexMetrika: React.FC = () => {
     // Создаем noscript для Яндекс.Метрики
     const noscript = document.createElement("noscript");
     const img = document.createElement("img");
-    img.src = `https://mc.yandex.ru/watch/102354151`;
+    img.src = `https://mc.yandex.ru/watch/102643177`;
     img.style.position = "absolute";
     img.style.left = "-9999px";
     noscript.appendChild(img);

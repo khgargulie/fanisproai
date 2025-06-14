@@ -18,7 +18,7 @@ export const ChangeYourLiveCta: React.FC = () => {
 
     // Отправляем событие в Яндекс Метрику
     if (typeof window !== 'undefined' && (window as any).ym) {
-      (window as any).ym(102354151, 'reachGoal', 'cta_block1_click');
+      (window as any).ym(102643177, 'reachGoal', 'change-your-live');
     }
 
     try {
