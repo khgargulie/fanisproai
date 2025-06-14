@@ -61,7 +61,7 @@ export const FreeLessonSection: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-deep-blue mb-6">
-            Твой первый шаг к свободе с ИИ: <br>
+            Твой первый шаг к свободе с ИИ: <br />
             смотри <span className="text-gold">вводный урок бесплатно! </span>
           </h2>
           <p className="text-lg text-gray-700 max-w-4xl mx-auto">
