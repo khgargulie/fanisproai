@@ -24,6 +24,7 @@ import { PrivacyPolicy } from "./components/privacy-policy";
 import { TermsOfService } from "./components/terms-of-service";
 import { TelegramChannel } from "./components/telegram-channel";
 import { ScrollToTop } from "./components/scroll-to-top";
+import { StickyMobileFooter } from "./components/sticky-mobile-footer";
 import { ExitIntentPopup } from "./components/exit-intent-popup";
 
 function HomePage() {
@@ -52,6 +53,7 @@ function HomePage() {
         <ContactSection />
       </main>
       <Footer />
+      <StickyMobileFooter />
       <ExitIntentPopup />
     </>
   );
