@@ -89,7 +89,7 @@ export const PricingSection: React.FC = () => {
                   color="secondary"
                   size="lg"
                   className="font-bold text-base px-8"
-                  onPress={() => document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })}
+                  onPress={() => document.getElementById("change-your-live-cta")?.scrollIntoView({ behavior: "smooth" })}
                 >
                   ЗАПИСАТЬСЯ НА КУРС
                 </Button>

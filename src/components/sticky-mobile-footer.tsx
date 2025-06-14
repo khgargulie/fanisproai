@@ -79,6 +79,7 @@ export const StickyMobileFooter: React.FC = () => {
 
         {/* Right side - Register button */}
         <button
+          color="secondary"
           onClick={handleRequestClick}
           className="bg-deep-blue hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors duration-200"
         >

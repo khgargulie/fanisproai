@@ -92,7 +92,7 @@ export const ChangeYourLiveCta: React.FC = () => {
                   />                  
                   <Button
                     type="submit"
-                    className="w-full font-bold bg-gold text-base hover:bg-gold/90"
+                    className="w-full font-bold bg-gold text-base text-white hover:bg-gold/90"
                     size="lg"
                     isLoading={isSubmitting}
                     disabled={!formData.name || !formData.phone}
