@@ -132,7 +132,7 @@ export const Header: React.FC = () => {
               color="secondary"
               className="font-bold w-full"
               onPress={() => {
-                onPress={() => document.getElementById("change-your-live-cta")?.scrollIntoView({ behavior: "smooth" })}
+                onPress={() => document.getElementById("change-your-live-cta")?.scrollIntoView({ behavior: "smooth" }
                 setIsMobileMenuOpen(false);
               }}
             >
