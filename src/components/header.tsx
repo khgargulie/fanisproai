@@ -129,15 +129,15 @@ export const Header: React.FC = () => {
               FAQ
             </a>
             <Button
-              color="secondary"
-              className="font-bold w-full"
-              onPress={() => {
-                onPress={() => document.getElementById("change-your-live-cta")?.scrollIntoView({ behavior: "smooth" }
-                setIsMobileMenuOpen(false);
-              }}
-            >
-              Записаться
-            </Button>
+            color="secondary"
+            className="font-bold w-full"
+            onPress={() => {
+              document.getElementById("change-your-live-cta")?.scrollIntoView({ behavior: "smooth" });
+              setIsMobileMenuOpen(false);
+            }}
+          >
+  Записаться
+</Button>
           </div>
         </div>
       )}
