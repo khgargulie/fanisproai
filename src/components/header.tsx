@@ -132,7 +132,7 @@ export const Header: React.FC = () => {
               color="secondary"
               className="font-bold w-full"
               onPress={() => {
-                window.open("https://wa.me/79047133714?text=Здравствуйте! Хочу записаться на курс по ИИ", "_blank");
+                onPress={() => document.getElementById("change-your-live-cta")?.scrollIntoView({ behavior: "smooth" })}
                 setIsMobileMenuOpen(false);
               }}
             >

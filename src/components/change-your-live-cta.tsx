@@ -30,6 +30,8 @@ export const ChangeYourLiveCta: React.FC = () => {
           phone: formData.phone,
           to_name: "Фанис",
           page_url: window.location.href,
+          form_id: "change_your_live_cta_form", // ID формы для идентификации
+          form_source: "Записаться на курс", // Человекочитаемое название формы
         },
         "8MWpFjP_52hJe3-O7"
       );
