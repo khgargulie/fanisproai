@@ -49,7 +49,7 @@ export const PricingSection: React.FC = () => {
           <Card className="shadow-card border-2 border-deep-blue">
             <CardBody className="p-8">
               <div className="text-center mb-6">
-                <h3 className="text-gold text-4xl font-bold mb-2">7 000 рублей</h3>
+                <h3 className="text-gold text-4xl font-bold mb-2">6 990 рублей</h3>
                 <p className="text-text-gray">Единоразовый платеж</p>
               </div>
               

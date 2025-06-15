@@ -15,10 +15,10 @@ export const HeroSection: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Освободи до 15 часов в неделю с помощью ИИ: <span className="text-gold">онлайн-курс</span> по использованию <span className="text-gold">ChatGPT, DeepSeek, </span> Claude и др.
+              Освободи до 15 часов в неделю с помощью ИИ: <span className="text-gold">онлайн-курс</span> по использованию <span className="text-gold">ChatGPT, DeepSeek</span>, Claude и др.
             </h1>
             <p className="text-xl md:text-2xl mb-4 opacity-90">
-              Научись делегировать рутину искусственному интеллекту за 14 дней.
+              Научись делегировать рутину искусственному интеллекту <span className="text-gold"> за 14 дней </span>
             </p>
             <p className="text-lg mb-8 opacity-80">
               Пока другие тратят часы на задачи, ты будешь получать готовые результаты за минуты.

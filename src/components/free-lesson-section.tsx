@@ -29,6 +29,7 @@ export const FreeLessonSection: React.FC = () => {
           from_name: formData.name,
           phone: formData.phone,
           to_name: "Фанис",
+          page_url: window.location.href,
         },
         "8MWpFjP_52hJe3-O7"
       );

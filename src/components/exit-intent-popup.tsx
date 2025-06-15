@@ -68,6 +68,7 @@ export const ExitIntentPopup: React.FC = () => {
         from_name: formData.name,
         email: formData.email,        // ← Изменить на email
         to_name: "Фанис",
+        page_url: window.location.href,
       },
       "8MWpFjP_52hJe3-O7"
   );
