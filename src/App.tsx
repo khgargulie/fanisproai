@@ -13,11 +13,11 @@ import { ProgramSection } from "./components/program-section";
 import { AboutSection } from "./components/about-section";
 import { ExpertiseSection } from "./components/expertise-section";
 import { PricingSection } from "./components/pricing-section";
-import { LimitedOfferSection } from "./components/limited-offer-section";
+// import { LimitedOfferSection } from "./components/limited-offer-section";
 import { CtaSection } from "./components/cta-section";
 import { FaqSection } from "./components/faq-section";
 import { ChangeYourLiveCta } from "./components/change-your-live-cta";
-import { CtaBlock2 } from "./components/cta-block2";
+// import { CtaBlock2 } from "./components/cta-block2";
 import { ContactSection } from "./components/contact-section";
 import { Footer } from "./components/footer";
 import { PrivacyPolicy } from "./components/privacy-policy";
@@ -47,7 +47,7 @@ function HomePage() {
         <AboutSection />       
         <PricingSection />
         {/*<CtaBlock2 /> */}
-        <LimitedOfferSection /> 
+        {/*<LimitedOfferSection /> */}
         <CtaSection />
         <FaqSection />
         <ContactSection />

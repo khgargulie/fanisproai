@@ -75,7 +75,7 @@ export const HeroSection: React.FC = () => {
               </div>
               <div className="flex items-center gap-2 text-white/90 text-sm">
                 <Icon icon="lucide:calendar" />
-                <span>Старт курса: 20 июня. Автор курса Фанис Хакимов</span>
+                <span>{/*Старт курса: 20 июня. */} Автор курса Фанис Хакимов</span>
               </div>
             </div>
           </motion.div>
