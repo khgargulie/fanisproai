@@ -62,18 +62,18 @@ export const ExitIntentPopup: React.FC = () => {
 
     try {
       await emailjs.send(
-      "service_bdp557t",
-      "template_s2kbrd8",
-      {
-        from_name: formData.name,
-        email: formData.email,        // ← Изменить на email
-        to_name: "Фанис",
-        page_url: window.location.href,
-        form_id: "exit_intent_popup_form", // ID формы для идентификации
-        form_source: "Exit Intent Popup - Бонус", // Человекочитаемое название формы
-      },
-      "8MWpFjP_52hJe3-O7"
-  );
+        "service_bdp557t",
+        "template_s2kbrd8",
+        {
+          from_name: formData.name,
+          email: formData.email,        // ← Изменить на email
+          to_name: "Фанис",
+          page_url: window.location.href,
+          form_id: "exit_intent_popup_form", // ID формы для идентификации
+          form_source: "Exit Intent Popup - Бонус", // Человекочитаемое название формы
+        },
+        "8MWpFjP_52hJe3-O7"
+      );
       setIsSubmitted(true);
       setFormData({ name: "", email: "" });
     } catch (error) {

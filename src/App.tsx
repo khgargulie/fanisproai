@@ -26,6 +26,7 @@ import { TelegramChannel } from "./components/telegram-channel";
 import { ScrollToTop } from "./components/scroll-to-top";
 import { StickyMobileFooter } from "./components/sticky-mobile-footer";
 import { ExitIntentPopup } from "./components/exit-intent-popup";
+import { UmnicoWidgetStyles } from "./components/umnico-widget-styles";
 
 function HomePage() {
   return (
@@ -64,6 +65,7 @@ function App() {
     <div className="min-h-screen bg-white">
       <Router>
         <ScrollToTop />
+        <UmnicoWidgetStyles />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

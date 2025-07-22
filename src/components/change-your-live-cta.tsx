@@ -28,15 +28,20 @@ export const ChangeYourLiveCta: React.FC = () => {
         {
           from_name: formData.name,
           phone: formData.phone,
-          to_name: "Фанис",
+          message: "Заявка на курс",
+          time: new Date().toLocaleString(),
           page_url: window.location.href,
-          form_id: "change_your_live_cta_form", // ID формы для идентификации
-          form_source: "Записаться на курс", // Человекочитаемое название формы
+          form_source: "Записаться на курс",
+          form_id: "change_your_live_cta_form",
+          user_os: navigator.oscpu,
+          user_platform: navigator.platform,
+          user_browser: navigator.userAgent,
+          user_country: "", // This would require an IP lookup service
         },
         "8MWpFjP_52hJe3-O7"
       );
       setIsSubmitted(true);
-      setFormData({ name: "", email: "" });
+      setFormData({ name: "", phone: "" });
     } catch (error) {
       console.error("Ошибка отправки:", error);
     } finally {

@@ -68,9 +68,9 @@ export const HeroSection: React.FC = () => {
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 shadow-xl">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-6">
                 <img 
-                  src="ai.jpeg" 
+                  src="fanis-photo2-2.jpg" 
                   alt="ИИ интерфейс" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain object-bottom rounded-lg"
                 />
               </div>
               <div className="flex items-center gap-2 text-white/90 text-sm">

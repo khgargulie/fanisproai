@@ -28,10 +28,15 @@ export const FreeLessonSection: React.FC = () => {
         {
           from_name: formData.name,
           phone: formData.phone,
-          to_name: "Фанис",
+          message: "Заявка на бесплатный урок",
+          time: new Date().toLocaleString(),
           page_url: window.location.href,
-          form_id: "free_lesson_form", // ID формы для идентификации
-          form_source: "Бесплатный урок", // Человекочитаемое название формы
+          form_source: "Бесплатный урок",
+          form_id: "free_lesson_form",
+          user_os: navigator.oscpu,
+          user_platform: navigator.platform,
+          user_browser: navigator.userAgent,
+          user_country: "", // This would require an IP lookup service
         },
         "8MWpFjP_52hJe3-O7"
       );
